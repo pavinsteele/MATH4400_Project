@@ -1,3 +1,7 @@
+#this was an attempt to use TensorFlow for neuralNet
+#It did not work, likely due to user error
+#Will be fixed, but for now refer to neuralNet3
+
 #help from here
 #https://www.analyticsvidhya.com/blog/2021/10/implementing-artificial-neural-networkclassification-in-python-from-scratch/
 #https://www.youtube.com/watch?v=E35CVhVKISA
@@ -15,6 +19,8 @@ pd.set_option('display.max_columns', None)
 #Smote
 from imblearn.over_sampling import SMOTE
 
+#put file into directory from Charlie's preprocessing file
+#just to make code easier to read
 df = pd.read_csv('dfUltimate.csv', header = 0)
 print(list(df.columns))
 X = df.drop(columns= ['GoodBorrower', 'ID', 'Unnamed: 0']).values

@@ -1,3 +1,6 @@
+#initial preprocessing file
+#replaced by Charlie's preprocessing.py
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
